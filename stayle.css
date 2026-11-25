@@ -1,0 +1,232 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+
+header {
+    width: 1100px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: #d5a900;
+    font-size: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+.home {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text {
+    width: 530px;
+}
+
+.home-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d5a900;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Barcha rasmlar uchun kvadrat o'lcham */
+.home-img img,
+.card img,
+.about img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+}
+
+.home-img img {
+    width: 450px;
+    height: 450px;
+}
+
+.menu {
+    width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.about {
+    width: 1100px;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about img {
+    width: 400px;
+    height: 400px;
+}
+
+.about div {
+    width: 600px;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contact {
+    width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Telefon va kichik ekranlar */
+@media (max-width: 1150px) {
+    header,
+    .home,
+    .menu,
+    .about,
+    .contact {
+        width: 340px;
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .home,
+    .about {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .home-text,
+    .about div {
+        width: 340px;
+    }
+
+    .home-text h2 {
+        font-size: 28px;
+    }
+
+    .home-img img,
+    .about img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .card img {
+        width: 298px;
+        height: 298px;
+    }
+}
